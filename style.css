@@ -6,6 +6,7 @@
 
 .wrapper {
     background: #D8DDE1;
+    /* overflow: hidden; */
 }
 
 /* NavBar */
@@ -69,7 +70,6 @@
 
 .image-wrapper {
     display: grid;
-    z-index: 1;
 }
 
 .image-wrapper img {
@@ -79,7 +79,6 @@
     justify-self: center;
     object-fit: cover;
     object-position: center;
-    z-index: 2;
 }
 
 .content-wrapper {
@@ -97,7 +96,7 @@
     line-height: 100px;
     text-align: center;
     font-family: 'Spectral', serif;
-    margin-left: 90px;
+    margin-left: 50px;
 }
 
 .content-wrapper h2 {
@@ -145,4 +144,131 @@
     text-align: center;
     color: #45272F;
     border: 3px solid  #45272F;
+}
+
+
+/* SHOES PAGE */
+/* general */
+
+.shoes-wrapper {
+    background: #474C62;
+}
+
+/* NavBar */
+.shoes-nav-wrapper a {
+    color: #F2E5C6;
+}
+
+/* Main content */
+.shoes-main-content-wrapper {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.right-side {
+    display: grid;
+}
+
+.right-side img {
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    justify-self: end;
+    margin-right: 5%;
+}
+
+.left-side {
+    align-self: center;
+    height: 80vh;
+    display: grid;
+    /* align-content:center; */
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.left-side button {
+    width: 250px;
+    height: 90px;
+    background: #181816;
+    border: none;
+    font-family: Rasa;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    color: #E6E7EC;
+    font-size: 38px;
+}
+
+.left-side h2 {
+    font-family: Rasa;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    color: #F2E5C6;
+    font-size: 40px;
+    align-self: end;
+    letter-spacing: 2px;
+}
+
+.left-side h3 {
+    text-align: center;
+    color: #A68C86;
+    font-family: Rasa;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    align-self: start;
+}
+
+.left-side h1 {
+    font-family: Rasa;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    text-align: center;
+    color: #181816;
+}
+
+#dollar {
+    color: #F2E5C6;
+    font-size: 97px;
+}
+
+#actual_price {
+    color:  #DEB101;;
+    font-size: 87px;
+}
+
+.collors-wrapper {
+    position: absolute;
+    width: 50px;
+    height: 40vh;
+    right: 3vw;
+    top: 50vh;
+}
+
+.white {
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    background: #F2E4C5;
+    margin-bottom: 3vw;
+}
+
+.yellow {
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    background: #BB8A1C;
+    margin-bottom: 3vw;
+}
+
+.red {
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    background: #7B2B2F;
 }
